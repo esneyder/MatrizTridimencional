@@ -164,19 +164,20 @@ public class MainCm {
                 while (Val < (this.N * this.N)) {//v2
                     if (Val % this.N == 0) //si Val es divisible`por N
                     {
-                       Fila++;
+                       Fila=0;
+                        System.out.println("Valor Fila" +  Fila);
                     } else {
-                        if (Fila ==0) {
-                            Fila=this.N/2;
+                         if (Fila == this.N - 1 || Fila==0 ) {
+                            Fila=0;                         
                         } else {
                             Fila--;
                             System.out.println("fil"+Fila);
                         }
-                        if (Col == this.N - 1) {
-                           Col=(this.N-1);
+                           if (Col == 0) {
+                            Col = this.N - 1;
                              System.out.println( "colm"+Col);
                         } else {
-                            Col++;
+                            Col--;
                              System.out.println( "col"+Col);
                         }
                     }
