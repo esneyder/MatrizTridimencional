@@ -152,6 +152,7 @@ public class MainCm {
             int[][] mat = new int[this.N][this.N];//crea una matriz de n filas x n columnas
             if (Par() == false) {
                 int Fila =(this.N)/2, Col =0, Val = 1;
+                System.out.println("probando el método");
                 // Col es: la columna y toma el punto medio
                 // Val es: el contenido del cuadrado
                 mat[Fila][Col] = Val;//Asigna un 1 en la mitad de la priemra fila  
