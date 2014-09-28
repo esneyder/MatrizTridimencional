@@ -155,33 +155,24 @@ public class MainCm {
                 System.out.println("probando el método");
                 // Col es: la columna y toma el punto medio
                 // Val es: el contenido del cuadrado
-                mat[Fila][Col] = Val;//Asigna un 1 en la mitad de la priemra fila  
-                for (int i = 0; i < N; i++) {
-                    for (int j = 0; j <N; j++) {
-                         System.out.print(mat[i][j]);
-                    }
-                    System.out.println("");
-                }
+                mat[Fila][Col] = Val;//Asigna un 1 en la mitad de la priemra fila 
+               
                 while (Val < (this.N * this.N)) {//v2
                     if (Val % this.N == 0) //si Val es divisible`por N
                     {
-                       Fila--;
-                        System.out.println("Valor Fila" +  Fila);
+                       Fila--;                        
                       
                     } else {
                          if (Fila==0) {
                            Fila=this.N-1; 
-                            System.out.println("Valor F" +  Fila);
+                           
                         } else {
-                            Fila--;
-                            System.out.println("fil"+Fila);
+                            Fila--;                         
                         }
                            if (Col==0) {
-                            Col=this.N-1;
-                             System.out.println( "colm"+Col);
+                            Col=this.N-1;                          
                         } else {
-                            Col--;
-                             System.out.println( "col"+Col);
+                            Col--;                             
                         }
                     }
                     Val++;
